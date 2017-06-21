@@ -1,0 +1,547 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema#  article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# product: http://ogp.me/ns/product# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video#">
+<head>
+<meta charset="utf-8"/>
+<script src="https://cdn.ampproject.org/v0.js" async></script>
+<meta name="title" content="Command Prompt - How to use the simple, basic commands | Digital Citizen"/>
+<meta property="og:title" content="Command Prompt - How to use the simple, basic commands | Digital Citizen"/>
+<meta property="og:site_name" content="Digital Citizen"/>
+<meta property="og:image" content="http://www.digitalcitizen.life/sites/default/files/styles/img_u_large/public/featured/2015-10/cmd.jpg?itok=5b3R82z1"/>
+<meta property="og:url" content="http://www.digitalcitizen.life/command-prompt-how-use-basic-commands"/>
+<meta name="description" content="Changing the working directory, viewing the content of a directory, creating and renaming folders, copying, deleting files and folders, launching an application"/>
+<link rel="image_src" href="http://www.digitalcitizen.life/sites/default/files/styles/img_u_large/public/featured/2015-10/cmd.jpg?itok=5b3R82z1"/>
+<meta name="referrer" content="no-referrer"/>
+<meta property="article:modified_time" content="2017-01-19T11:20:07+0100"/>
+<meta property="article:tag" content="Tutorials, Programs, Command Prompt, System and Security, Windows"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image:width" content="640"/>
+<meta property="og:image:type" content="image/jpeg"/>
+<meta property="og:image:height" content="242"/>
+<meta property="article:published_time" content="2016-05-11T14:07:23+0200"/>
+<meta property="article:section" content="Productivity"/>
+<meta name="keywords" content="Command Prompt, basic, commands, navigate, folders, tree, drive, programs, Windows"/>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)"/>
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon"/>
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192"/>
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"/>
+<link rel="manifest" href="/manifest.json"/>
+<link rel="canonical" href="/command-prompt-how-use-basic-commands"/>
+<link rel="next" href="/command-prompt-how-use-basic-commands?page=1"/>
+<title>Command Prompt - How to use the simple, basic commands | Digital Citizen</title>
+<link rel="stylesheet" href="/sites/default/files/css/css_YFwJlUPIbNYb_jZuuWmBBJR38QSulKK8cT1YVaTsAIY.css?orw1bn" media="all"/>
+<style amp-custom>@font-face{font-family:'segoeuil';src:url('/themes/next/fonts/segoeui-light/segoeui-light.eot');src:url('/themes/next/fonts/segoeui-light/segoeui-light.eot?#iefix') format('embedded-opentype'),url('/themes/next/fonts/segoeui-light/segoeui-light.woff') format('woff'),url('/themes/next/fonts/segoeui-light/segoeui-light.ttf') format('truetype'),url('/themes/next/fonts/segoeui-light/segoeui-light.svg#fs_joeyregular') format('svg');font-weight:normal;font-style:normal;}</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js" async custom-element="amp-analytics"></script>
+<script src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js" async custom-element="amp-user-notification"></script>
+<script src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async custom-element="amp-sidebar"></script>
+<script src="https://cdn.ampproject.org/v0/amp-ad-0.1.js" async custom-element="amp-ad"></script>
+</head>
+<body class="path-node">
+<a href="#main-content" class="visually-hidden focusable skip-link">
+Skip to main content
+</a>
+<div id="page-wrapper" class="page-wrapper">
+<header id="header" class="site-header" aria-label="Site header">
+<div typeof="schema:WebSite" class="region-header">
+<button class="main-navigation-open-button" on="tap:layoutSidebar.open">
+<svg height="1em" width="1em" fill="currentColor" viewBox="0 0 857.1 1000"><g transform="scale(1,-1) translate(0 -840)"><path d="M857 90v-71q0-15-10-26t-26-10h-785q-15 0-25 10t-11 26v71q0 15 11 25t25 11h785q15 0 26-11t10-25z m0 286v-72q0-14-10-25t-26-10h-785q-15 0-25 10t-11 25v72q0 14 11 25t25 10h785q15 0 26-10t10-25z m0 285v-71q0-14-10-25t-26-11h-785q-15 0-25 11t-11 25v71q0 15 11 26t25 10h785q15 0 26-10t10-26z"/></g></svg>
+<span>View main navigation</span>
+</button>
+<div id="block-next-branding" class="block-next-branding block"><h1 class="site-logo"><span property="schema:name" content="Digital Citizen" class="hidden"></span><span rel="schema:publisher" resource="#Digital-Citizen" class="hidden"></span><span property="schema:url" content="http://www.digitalcitizen.life/" class="hidden"></span><a href="/" title="Home" rel="home" class="site-logo--link"><amp-img src="/themes/next/logo.svg" alt="Digital Citizen" height="96" width="600" layout="responsive" class="site-logo--img"></amp-img></a></h1></div> </div>
+</header>
+<div class="site-highlighted layout-container">
+<aside class="section">
+<div class="region-highlighted">
+</div>
+</aside>
+</div>
+<div id="main-wrapper" class="layout-main-wrapper layout-container">
+<div id="main" class="layout-main">
+<main id="content" class="column column-main-content">
+<a id="main-content" tabindex="-1"></a> <div class="region-content">
+<div id="block-next-page-title" class="block-next-page-title">
+<h1 class="page-title"><span>Command Prompt - How to use the simple, basic commands</span>
+</h1>
+</div>
+<div id="block-next-content" class="block-next-content block">
+<article about="#command-prompt-how-use-basic-commands" typeof="schema:TechArticle" class="article--full">
+<span property="schema:name" content="Command Prompt - How to use the simple, basic commands" class="hidden"></span>
+<span property="schema:interactionCount" content="UserComments:47" class="hidden"></span>
+<footer class="node__meta">
+<div>
+<span class="field-article-type">Tutorial</span> by <span rel="schema:author"><a title="View user profile." href="/users/codrut-neagu" typeof="schema:Person" class="username"><span property="schema:name">Codrut Neagu</span><span property="schema:homeLocation" content="Romania" class="hidden"></span></a></span>
+published on <span property="schema:dateCreated" content="2016-05-11T12:07:23+00:00">05/11/2016</span>
+<span content="2016-05-11T12:07:23+00:00" class="hidden"></span>
+<span property="schema:mainEntityOfPage" content="/command-prompt-how-use-basic-commands" class="hidden"></span>
+<span property="schema:dateModified" content="2017-01-19T10:20:07+00:00" class="hidden"></span>
+<span property="schema:datePublished" content="2017-01-19T10:20:07+00:00" class="hidden"></span>
+<span property="schema:headline" content="Command Prompt - How to use the simple, basic commands" class="hidden"></span>
+<span rel="schema:publisher" resource="#Digital-Citizen" class="hidden"></span>
+</div>
+</footer>
+<div class="node__content">
+<div class="node__article-details">
+<div class="field field-featured-image"> <span property="schema:image" typeof="schema:ImageObject"><amp-img src="/sites/default/files/styles/lst_small/public/featured/2015-10/cmd.jpg?itok=xAYGrtES" width="256" height="96" alt="Command Prompt" title="Command Prompt" layout="responsive"><noscript><img src="/sites/default/files/styles/lst_small/public/featured/2015-10/cmd.jpg?itok=xAYGrtES" width="256" height="96" alt="Command Prompt" title="Command Prompt"/></noscript></amp-img><span property="schema:url" href="/sites/default/files/styles/lst_small/public/featured/2015-10/cmd.jpg?itok=xAYGrtES" class="hidden"></span><span property="schema:width" content="256" class="hidden"></span><span property="schema:height" content="96" class="hidden"></span></span>
+</div>
+</div> <div property="schema:articleBody" class="field body"><p>Geeks and experts all love the <i>Command Prompt</i> because of the advanced tasks and commands you can run in it. But that doesn’t mean that it’s only useful for experts - after all, every expert was a novice in the beginning. And <i>Command Prompt</i> is not built only on advanced commands, but also on simple commands designed to perform basic operations. In this article we will show you how to execute commands like changing the working folder, viewing the contents of a directory, creating and renaming folders, copying, deleting files and folders, and launching any application from the <i>Command Prompt</i>. We will also see how to get help when using this tool.</p>
+ <aside id="block-amp-ad-top" class="block-amp-ad-top block block--amp-ad"><div class="block__slots">
+ <p><amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="7475988860" layout="fixed-height" height="250" media="(min-width: 1744px)"></amp-ad></p>
+ <p><amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="7475988860" layout="fixed" height="90" width="728" media="(min-width: 1168px) and (max-width: 1743px)"></amp-ad></p>
+ <p><amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="7475988860" layout="fixed" height="250" width="300" media="(max-width: 1167px)"></amp-ad></p></div>
+</aside><p><b>NOTE:</b> The information shared in this tutorial applies to Windows 10, Windows 8.1 and Windows 7. Note that, for simplicity, we will use screenshots taken only in Windows 10.</p>
+<h2>How to navigate between folders</h2>
+<p>The first command from the list is <a href="http://en.wikipedia.org/wiki/Cd_(command)">CD (Change Directory)</a>. This command enables you to change the current folder or, in other words, to navigate to another folder from your computer.</p>
+<p>For instance, the command <i>CD\</i> takes you to the top of the directory tree. To see how it works, after you open the <i>Command Prompt</i>, type <i>cd\</i> and press <i>Enter</i> on your keyboard. You will see that the <i>CD\</i> command takes you to the top of the directory tree (in this case to the “C:” drive).</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_1.png" data-entity-type="file" data-entity-uuid="8bcedb18-b39e-4bd7-b520-7e808f3acc92" width="640" height="380" layout="responsive" style="max-width: 640px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_1.png" data-entity-type="file" data-entity-uuid="8bcedb18-b39e-4bd7-b520-7e808f3acc92" width="640" height="380"/></noscript></amp-img></p>
+<p><b>NOTE:</b> <i>Command Prompt</i> is not case sensitive, meaning that commands can be typed with capital letters, lowercase or any combination of them. The commands <i>CD, cd</i> or <i>Cd</i> will all work in the same way.</p>
+<p>Going back to the <i>“CD\”</i> command, now you are working on the root of the “C:” drive. If you need to go to a specific folder from this drive run the command <i>“CD Folder”</i>. The subfolders must be separated by a backslash character: <i>“\”</i>. For instance, when you need to access the <i>System32</i> folder located in <i>“</i><i>C:\Windows”</i>, type <i>“cd windows\system32\”</i> as shown below, and then press <i>Enter</i> on your keyboard.</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_2.png" data-entity-type="file" data-entity-uuid="1d6f0bc7-888c-42c2-b54f-e4fbd1f59fe3" width="640" height="380" layout="responsive" style="max-width: 640px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_2.png" data-entity-type="file" data-entity-uuid="1d6f0bc7-888c-42c2-b54f-e4fbd1f59fe3" width="640" height="380"/></noscript></amp-img></p>
+<p>When you need to go to one folder up, use the <i>“cd..”</i> command. Let's assume that you want to go back to the <i>Windows</i> folder. Type <i>“cd..”</i> and press <i>Enter</i> on your keyboard. You will notice that your current directory has changed to <i>”</i><i>C:\Windows”</i>.</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_3.png" data-entity-type="file" data-entity-uuid="8e3d5822-cfed-47c3-9cd3-df137788c4e0" width="640" height="380" layout="responsive" style="max-width: 640px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_3.png" data-entity-type="file" data-entity-uuid="8e3d5822-cfed-47c3-9cd3-df137788c4e0" width="640" height="380"/></noscript></amp-img></p>
+<h2>How to access a certain drive</h2>
+<p>To access another drive, type that drive’s letter, followed by <i>“</i><i>:”</i>. For instance, if you wanted to change the drive from “C:” to “D:”, you should type <i>“d:”</i> and then press <i>Enter</i> on your keyboard.</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_4.png" data-entity-type="file" data-entity-uuid="a0570958-3f26-4369-822c-f809e8ff138c" width="640" height="380" layout="responsive" style="max-width: 640px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_4.png" data-entity-type="file" data-entity-uuid="a0570958-3f26-4369-822c-f809e8ff138c" width="640" height="380"/></noscript></amp-img></p>
+<p>To change the drive and the directory at the same time, use the <i>cd</i> command, followed by the <i>“/d”</i> switch. The <i>“/d”</i> parameter is used to change the current drive to a specific folder from another disk volume. For instance, if you are now on the ”D:” drive and you want to go back to the <i>Windows</i> folder from the“C:” drive, you should type <i>“cd /d C:\Windows”</i> and press <i>Enter</i> on your keyboard, like in the following screenshot.</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_5.png" data-entity-type="file" data-entity-uuid="a52494f7-fe95-4e05-9ff5-eb0b4e9fa503" width="640" height="380" layout="responsive" style="max-width: 640px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_5.png" data-entity-type="file" data-entity-uuid="a52494f7-fe95-4e05-9ff5-eb0b4e9fa503" width="640" height="380"/></noscript></amp-img></p>
+<p><b>NOTE:</b> By typing the drive letter you automatically move to your most recent location in that drive. For instance, if you are on “D:” drive and type <i>“cd c:\windows”</i>nothing seems to happen. But if you type <i>“</i><i>c:”</i>, then the working folder will change to <i>“c:\windows”</i>(assuming that it was the last folder you worked with on your “C:” drive).</p>
+<aside id="block-amp-ad-in-text" class="block-amp-ad-in-text block block--amp-ad"><div class="block__slots">
+ <p><amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="5720054068" layout="fixed-height" height="250" media="(min-width: 1744px)"></amp-ad></p>
+ <p><amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="5720054068" layout="fixed" height="90" width="728" media="(min-width: 1168px) and (max-width: 1743px)"></amp-ad></p>
+ <p><amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="5720054068" layout="fixed" height="250" width="300" media="(max-width: 1167px)"></amp-ad></p></div>
+</aside><h2>How to view the contents of a folder</h2>
+<p>You can view the contents of a folder by using a simple command called <a href="http://en.wikipedia.org/wiki/Dir_(command)">DIR</a>. To test it, we've created a folder named <i>Digital_Citizen</i> on the D: drive, with several files and subfolders.</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_6.png" data-entity-type="file" data-entity-uuid="73d752a3-eda2-48c3-bf4b-63903e69fde8" width="636" height="430" layout="responsive" style="max-width: 636px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_6.png" data-entity-type="file" data-entity-uuid="73d752a3-eda2-48c3-bf4b-63903e69fde8" width="636" height="430"/></noscript></amp-img></p>
+<p>The last time, our working folder was <i>“C:\Windows”</i>. We will navigate to the folder mentioned above by using the command <i>“cd /d D:\Digital_Citizen”</i>. To view the contents of the folder we will type <i>DIR</i> and press <i>Enter</i> on the keyboard. A list of the files and folders contained by it is displayed, together with some details about them (the size and the date and time when they were last modified).</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_7.png" data-entity-type="file" data-entity-uuid="01b01c18-1a3d-4fca-9862-f2d6b105a3e1" width="640" height="380" layout="responsive" style="max-width: 640px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_7.png" data-entity-type="file" data-entity-uuid="01b01c18-1a3d-4fca-9862-f2d6b105a3e1" width="640" height="380"/></noscript></amp-img></p>
+<h2>How to create a new folder from the Command Prompt</h2>
+<p>You can make a new directory using the <a href="http://en.wikipedia.org/wiki/Mkdir">MKDIR (Make Directory)</a> or the <i>MD</i> command. The syntax of these commands is <i>“</i><i>MKDIR</i><i>Folder”</i> or <i>“MD Folder”</i>.</p>
+<p>Let's say we need to create a new folder called <i>Digital_Citizen_Life</i>that will be placed in the <i>“D:\Digital_Citizen”</i>folder. We will type <i>“mkdir Digital_Citizen_Life”</i>and then we will press <i>Enter</i>, as shown below.</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_8.png" data-entity-type="file" data-entity-uuid="cebc6b82-b847-41b0-b58a-3ee2fe8925c2" width="640" height="380" layout="responsive" style="max-width: 640px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_8.png" data-entity-type="file" data-entity-uuid="cebc6b82-b847-41b0-b58a-3ee2fe8925c2" width="640" height="380"/></noscript></amp-img></p>
+<p>To test if it worked, we will use again the <i>dir</i> command. The newly created folder appears in the list.</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_9.png" data-entity-type="file" data-entity-uuid="d837ed49-1d58-4c33-9d61-cdedf1745fd1" width="641" height="380" layout="responsive" style="max-width: 641px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_9.png" data-entity-type="file" data-entity-uuid="d837ed49-1d58-4c33-9d61-cdedf1745fd1" width="641" height="380"/></noscript></amp-img></p>
+<p><b>NOTE:</b> Don't forget that all these commands depend on the current location in the <i>Command Prompt</i>. For instance, if you are on the “C:” drive and type <i>“MKDIR test”</i>, a new folder will be created in the root of the “C:” drive.</p>
+<p>Another way to create a folder, that doesn't involve being in the desired folder, is to type the complete path of the new folder. For example, if you are working on the “D:” drive and you want to create a new folder in “C:”, called <i>other_stuff</i>, type <i>“mkdir c:\other_stuff”</i> and then press <i>Enter</i>.</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_10.png" data-entity-type="file" data-entity-uuid="8b74500e-2224-4157-a4e4-9583a83bb841" width="641" height="380" layout="responsive" style="max-width: 641px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_10.png" data-entity-type="file" data-entity-uuid="8b74500e-2224-4157-a4e4-9583a83bb841" width="641" height="380"/></noscript></amp-img></p>
+<p>When you need to create a folder with subfolders at the same time you can use the <i>”MKDIR Folder\Subfolder”</i> command . For instance, if we type <i>“mkdir Digital_Citizen_Tests\Beta\Test1”</i> three folders will be created: <i>Digital_Citizen_Tests, Beta</i>and <i>Test1</i>, in a tree-like structure.</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_11.png" data-entity-type="file" data-entity-uuid="ff1eb102-6772-4f7a-8948-e6cfb0185879" width="636" height="430" layout="responsive" style="max-width: 636px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_11.png" data-entity-type="file" data-entity-uuid="ff1eb102-6772-4f7a-8948-e6cfb0185879" width="636" height="430"/></noscript></amp-img></p>
+<h2>How to rename files and folders</h2>
+<p>To rename files and folders you need to use the <a href="http://en.wikipedia.org/wiki/Ren_(command)">REN (Rename)</a> command.</p>
+<p>To rename folders, type <i>“ren Folder NewFolderName”</i>. For example, if we wanted to rename the <i>Digital_Citizen_Tests</i>folder to <i>Digital_Citizen_Final_Tests,</i> we should run <i>“ren Digital_Citizen_Tests Digital_Citizen_Final_Tests”</i>and then press <i>Enter</i>.</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_12.png" data-entity-type="file" data-entity-uuid="73de29e6-5ea3-42e3-a6c2-410cc47d6241" width="641" height="380" layout="responsive" style="max-width: 641px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_12.png" data-entity-type="file" data-entity-uuid="73de29e6-5ea3-42e3-a6c2-410cc47d6241" width="641" height="380"/></noscript></amp-img></p>
+<p>To rename a file, use the same command, like this: <i>“ren filename.extension newname.extension”</i>. For instance, to rename the <i>Digital_Citizen_Picture.jpg</i> file to <i>Picture1.jpg</i> we have to run the command <i>“ren Digital_Citizen_Picture.jpg Picture1.jpg”</i> command.</p>
+<p><amp-img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_13.png" data-entity-type="file" data-entity-uuid="22a13385-b765-4e8e-a021-4c19887b730e" width="641" height="380" layout="responsive" style="max-width: 641px;"><noscript><img alt="Command Prompt, cmd, Windows, basic, commands, files, folders" src="/sites/default/files/gdrive/cmd_basic_commands/cmd_13.png" data-entity-type="file" data-entity-uuid="22a13385-b765-4e8e-a021-4c19887b730e" width="641" height="380"/></noscript></amp-img></p>
+<p>Go to the second page of this tutorial and learn how to copy files and folders, how to delete files and folders, how to start and application and how to get help when using the Command Prompt.</p>
+<nav class="pager clearfix" aria-labelledby="pagination-heading">
+<h4 id="pagination-heading" class="visually-hidden">Pagination</h4>
+<ul class="pager__items js-pager__items">
+<li class="pager__item pager__item--first is-empty" aria-hidden="true">&nbsp;</li>
+<li class="pager__item pager__item--previous is-empty" aria-hidden="true">&nbsp;</li>
+<li class="pager__item is-active">
+<a href="?page=0" title="Current page">
+<span class="visually-hidden">
+Current page
+</span>1</a>
+</li>
+<li class="pager__item">
+<a href="?page=1" title="Go to page 2">
+<span class="visually-hidden">
+Page
+</span>2</a>
+</li>
+<li class="pager__item pager__item--next">
+<a href="?page=1" title="Go to next page" rel="next">
+<span class="visually-hidden">Next page</span>
+<span aria-hidden="true">Next ›</span>
+</a>
+</li>
+<li class="pager__item pager__item--last">
+<a href="?page=1" title="Go to last page">
+<span class="visually-hidden">Last page</span>
+<span aria-hidden="true">Last »</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<footer class="node__tags">
+<span class="node__tags__title">Discover more:</span>
+<a href="/productivity" hreflang="en">Productivity</a>,
+<a href="/tutorials" hreflang="en">Tutorials</a>, <a href="/programs" hreflang="en">Programs</a>, <a href="/command-prompt" hreflang="en">Command Prompt</a>, <a href="/system-and-security" hreflang="en">System and Security</a>, <a href="/windows" hreflang="en">Windows</a>
+</footer>
+<ul class="links inline"><li class="comment-comments"><a href="/node/233/comments" title="There are 47 comments on this article." rel="nofollow" hreflang="en">View comments</a></li><li class="comment-add"><a href="/node/233/comments#comment-form" title="Share your thoughts and opinions." rel="nofollow" hreflang="en">Add new comment</a></li></ul>
+</article>
+</div>
+</div>
+<section class="site-bottom">
+<div class="region-bottom">
+<aside id="block-amp-ad-bottom" class="block-amp-ad-bottom block block--amp-ad"><div class="block__slots"> <amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="8533919666" layout="fixed-height" height="250" media="(min-width: 1744px)"></amp-ad> <amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="8533919666" layout="fixed" height="90" width="728" media="(min-width: 1168px) and (max-width: 1743px)"></amp-ad> <amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="8533919666" layout="fixed" height="250" width="300" media="(max-width: 1167px)"></amp-ad></div></aside><aside id="block-amp-ad-related-content" class="block-amp-ad-related-content block block--amp-ad"><h2 class="block__title">Related content</h2><div class="block__slots"> <amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="8791271669" layout="fixed" height="480" width="300" media="(max-width: 879px)"></amp-ad> <amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="8791271669" layout="fixed-height" height="480" media="(min-width: 880px) and (max-width: 1167px)"></amp-ad> <amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="8791271669" layout="fixed-height" height="200" media="(min-width: 1168px) and (max-width: 1455px)"></amp-ad> <amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="8791271669" layout="fixed-height" height="200" media="(min-width: 1456px) and (max-width: 1743px)"></amp-ad> <amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="8791271669" layout="fixed-height" height="240" media="(min-width: 1744px)"></amp-ad></div></aside>
+</div>
+</section>
+</main>
+<div id="sidebar" class="column column-sidebar">
+<aside class="section">
+<div class="region-sidebar">
+<div id="block-next-sidebar-search-form" class="block-next-sidebar-search-form block">
+<h2 class="block__title">Search content</h2>
+<form class="next-search-form simple-form-box" data-drupal-selector="next-search-form" property="schema:potentialAction" typeof="schema:SearchAction" action="/search" method="get" id="next-search-form" accept-charset="UTF-8">
+<div class="js-form-item form-item js-form-type-search form-item-terms js-form-item-terms form-no-label">
+<label for="edit-terms" class="visually-hidden js-form-required form-required">Search Terms</label>
+<input title="Enter the terms you wish to search for." placeholder="Enter search terms" data-drupal-selector="edit-terms" type="search" id="edit-terms" name="terms" value="" size="12" maxlength="128" class="form-search required" required="required" aria-required="true"/>
+</div>
+<span property="schema:query-input" content="required name=terms" class="hidden" data-drupal-selector="edit-schema-query-input"></span>
+<span property="schema:target" content="/search?terms={terms}" class="hidden" data-drupal-selector="edit-schema-target"></span>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><button class="form-clean-icon-button button js-form-submit" data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search"><svg fill="currentColor" viewBox="0 0 928.6 1000" height="1.5em" width="1.5em"><g transform="scale(1,-1) translate(0 -840)"><path d="M643 376q0 103-73 176t-177 74-177-74-73-176 73-177 177-73 177 73 73 177z m286-465q0-29-22-50t-50-21q-30 0-50 21l-191 191q-100-69-223-69-80 0-153 31t-125 84-84 125-31 153 31 152 84 126 125 84 153 31 153-31 125-84 84-126 31-152q0-123-69-223l191-191q21-21 21-51z"/></g></svg>
+</button></div>
+</form>
+</div>
+<div class="subscription-options block-next-sidebar-subscription-options block" id="block-next-sidebar-subscription-options">
+<h2 class="block__title">Subscription options</h2>
+<p class="description">Provide an email address in order to subscribe to our newsletter. The email address is not made public.</p>
+<form class="subscription-options__form simple-form-box" target="_top" action="/newsletter/signup" method="post" accept-charset="UTF-8">
+<div class="js-form-item form-item js-form-type-email form-item-email js-form-item-email form-no-label">
+<label class="visually-hidden js-form-required form-required">Email address</label>
+<input placeholder="email address" class="subscription-options__form__email form-email required" type="email" name="email" size="14" maxlength="254" required="required" aria-required="true"/>
+</div>
+<div class="form-actions"><input title="Subscribe to our newsletter" class="subscription-options__form__submit button js-form-submit form-submit" type="submit" name="op" value="Subscribe"/>
+</div>
+</form>
+<p class="description">Other subscription options</p>
+<div class="subscription-options__social_buttons">
+<ul class="items"><li class="item"><a href="http://feeds.feedburner.com/digitalcitizen/xQbw" data-fontello-font="digital-citizen" data-fontello-glyph="rss" target="_blank" rel="nofollow noopener noreferrer" title="Subscribe to our RSS Feed"><svg fill="currentColor" viewBox="0 0 1000 1000" height="1em" width="1em"><g transform="scale(1,-1) translate(0 -840)"><path d="M0-26q0 55 39 94t94 39 94-39 39-94q0-56-39-95t-94-38-94 39-39 94z m0 335l0 191q179 0 331-88t241-241 88-331l-192 0q0 194-137 331-138 138-331 138z m0 339l0 192q203 0 388-79t319-214 214-319 79-388l-192 0q0 164-64 314t-172 258-258 172-314 64z"/></g></svg><span class="title">RSS Feed</span></a></li><li class="item"><a href="https://www.facebook.com/DigitalCitizenLife" data-fontello-font="digital-citizen" data-fontello-glyph="facebook" target="_blank" rel="nofollow noopener noreferrer" title="Like us on Facebook"><svg fill="currentColor" viewBox="0 0 538 1000" height="1em" width="1em"><g transform="scale(1,-1) translate(0 -840)"><path d="M0 303l0 191 154 0 0 96q0 104 68 177t163 73l153 0 0-191-153 0q-15 0-27-16t-12-41l0-98 192 0 0-191-192 0 0-463-192 0 0 463-154 0z"/></g></svg><span class="title">Facebook</span></a></li><li class="item"><a href="https://www.google.com/+7tutorials" data-fontello-font="digital-citizen" data-fontello-glyph="gplus" target="_blank" rel="nofollow noopener noreferrer" title="Follow us on Google Plus"><svg fill="currentColor" viewBox="0 0 1184 1000" height="1em" width="1em"><g transform="scale(1,-1) translate(0 -840)"><path d="M0 22q0 87 89 155t215 68l54 0q-42 40-42 86 0 29 16 58-10-1-29-1-104 0-170 65t-66 160q0 91 82 159t187 68l310 0-69-50-98 0q47-18 74-68t26-111q0-93-88-162-37-29-48-46t-11-42q0-19 27-48t54-49q61-43 85-88t23-113q0-90-82-157t-222-66q-133 0-225 50t-92 132z m112 33q0-69 59-118t145-48q119 0 173 44t53 117q0 19-4 32-3 11-7 21t-12 19-14 16-19 16-21 15-25 18-26 17q-39 12-77 12-90 1-157-47t-68-114z m66 559q11-79 61-136t109-58q59-2 94 52t25 133-59 134-110 57-95-51-25-131z m555-24l0 50 200 0 0 200 50 0 0-200 201 0 0-50-201 0 0-201-50 0 0 201-200 0z"/></g></svg><span class="title">Google Plus</span></a></li><li class="item"><a href="https://twitter.com/DigitalCitizenL" data-fontello-font="digital-citizen" data-fontello-glyph="twitter" target="_blank" rel="nofollow noopener noreferrer" title="Follow us on Twitter"><svg fill="currentColor" viewBox="0 0 1230 1000" height="1em" width="1em"><g transform="scale(1,-1) translate(0 -840)"><path d="M0-47q30-3 60-3 176 0 314 108-82 1-147 50t-89 125q20-4 47-4 35 0 67 9-88 17-145 87t-58 160l0 3q53-30 115-31-52 34-82 90t-31 120q0 68 35 127 94-117 230-186t290-78q-7 33-7 58 0 104 74 178t179 74q109 0 184-80 87 18 160 62-28-91-110-140 73 9 144 40-48-75-125-131l0-33q0-101-29-202t-90-194-145-165-201-115-253-42q-209 0-387 113z"/></g></svg><span class="title">Twitter</span></a></li></ul>
+</div>
+</div>
+<div class="views-element-container block-next-popular-articles-block block" id="block-next-popular-articles-block">
+<h2 class="block__title">Popular Articles</h2>
+<div><div class="view view--popular-articles js-view-dom-id-fddd6ba8c5446354825bcc426d1ed577c2f4c33a96c446c5293ae12b1db340f2">
+<div class="view__content">
+<div class="views__rows">
+<div class="views__row">
+<article class="article--teaser-simple">
+<div class="field field-featured-image"> <a href="/microsoft-ships-new-surface-pro" tabindex="-1"><span><amp-img src="/sites/default/files/styles/lst_small/public/featured/2017-06/surface_pro.png?itok=rYs-5Sj5" width="256" height="96" alt="Surface Pro" layout="responsive"><noscript><img src="/sites/default/files/styles/lst_small/public/featured/2017-06/surface_pro.png?itok=rYs-5Sj5" width="256" height="96" alt="Surface Pro"/></noscript></amp-img></span>
+</a>
+</div>
+<div class="node__header-wrapper">
+<h3 class="node__title">
+<a href="/microsoft-ships-new-surface-pro" rel="bookmark"><span>Microsoft ships the new Surface Pro. 11 things you need to know!</span>
+</a>
+</h3>
+<span property="schema:name" content="Microsoft ships the new Surface Pro. 11 things you need to know!" class="hidden"></span>
+<span property="schema:interactionCount" content="UserComments:0" class="hidden"></span>
+<footer class="node__meta">
+<div class="submitted">
+<span class="field-article-type">Misc</span> by <span><span property="schema:name">Ciprian Adrian Rusen</span></span>
+published on <span>06/15/2017</span>
+</div>
+</footer>
+</div>
+<div class="node__content">
+<div class="field body"><p>As of June 15th, 2017, Microsoft ships the new Surface Pro, which everyone thought would be named Surface Pro 5. Microsoft has decided to quit numbering this device, and it offers a new version, without any number attached to its name, but with many improvements. If you want to see what is new about the Surface Pro and whether it fits your needs, read this article:</p>
+</div>
+</div>
+</article>
+</div>
+<div class="views__row">
+<article class="article--teaser-simple">
+<div class="field field-featured-image"> <a href="/stop-onedrive-creating-automatic-photo-albums" tabindex="-1"><span><amp-img src="/sites/default/files/styles/lst_small/public/featured/2017-06/photo_gallery.png?itok=99x6asJc" width="256" height="96" alt="Picture gallery" layout="responsive"><noscript><img src="/sites/default/files/styles/lst_small/public/featured/2017-06/photo_gallery.png?itok=99x6asJc" width="256" height="96" alt="Picture gallery"/></noscript></amp-img></span>
+</a>
+</div>
+<div class="node__header-wrapper">
+<h3 class="node__title">
+<a href="/stop-onedrive-creating-automatic-photo-albums" rel="bookmark"><span>Stop OneDrive from creating automatic photo albums in 3 steps</span>
+</a>
+</h3>
+<span property="schema:name" content="Stop OneDrive from creating automatic photo albums in 3 steps" class="hidden"></span>
+<span property="schema:interactionCount" content="UserComments:1" class="hidden"></span>
+<footer class="node__meta">
+<div class="submitted">
+<span class="field-article-type">Tutorial</span> by <span><span property="schema:name">Ciprian Adrian Rusen</span></span>
+published on <span>06/13/2017</span>
+</div>
+</footer>
+</div>
+<div class="node__content">
+<div class="field body"><p>One of the most annoying features of OneDrive is that it automatically creates photo albums from the pictures that you upload to this storage service and it notifies you about each album it creates. If you take many pictures and store them in OneDrive, this can drive you crazy, and you will want to turn it off. Here’s how:</p>
+</div>
+</div>
+</article>
+</div>
+<div class="views__row">
+<article class="article--teaser-simple">
+<div class="field field-featured-image"> <a href="/fat32-or-ntfs-how-format-sd-cards-memory-sticks-and-hard-drives" tabindex="-1"><span><amp-img src="/sites/default/files/styles/lst_small/public/featured/2017-06/flash_memory.png?itok=AVaMkGQa" width="256" height="96" alt="Flash memory" layout="responsive"><noscript><img src="/sites/default/files/styles/lst_small/public/featured/2017-06/flash_memory.png?itok=AVaMkGQa" width="256" height="96" alt="Flash memory"/></noscript></amp-img></span>
+</a>
+</div>
+<div class="node__header-wrapper">
+<h3 class="node__title">
+<a href="/fat32-or-ntfs-how-format-sd-cards-memory-sticks-and-hard-drives" rel="bookmark"><span>FAT32 or NTFS? How to format SD cards, memory sticks and hard drives</span>
+</a>
+</h3>
+<span property="schema:name" content="FAT32 or NTFS? How to format SD cards, memory sticks and hard drives" class="hidden"></span>
+<span property="schema:interactionCount" content="UserComments:0" class="hidden"></span>
+<footer class="node__meta">
+<div class="submitted">
+<span class="field-article-type">Tutorial</span> by <span><span property="schema:name">Ciprian Adrian Rusen</span></span>
+published on <span>06/08/2017</span>
+</div>
+</footer>
+</div>
+<div class="node__content">
+<div class="field body"><p>How should I format my SD card, my USB memory stick, USB external hard disk or my computer’s partition? Should I use the old FAT32 file format or the newer NTFS file format? It is a tough question for most people, and the right answer differs depending on the type of device that you need to format, how and where you will use it. Read this article, and you will understand how it is best to format any device:</p>
+</div>
+</div>
+</article>
+</div>
+<div class="views__row">
+<article class="article--teaser-simple">
+<div class="field field-featured-image"> <a href="/review-kingston-datatraveler-microduo-3c" tabindex="-1"><span><amp-img src="/sites/default/files/styles/lst_small/public/featured/2017-06/data_taveler_microduo_3c.png?itok=GWRuSo7f" width="256" height="96" alt="Kingston DataTraveler microDuo 3C" layout="responsive"><noscript><img src="/sites/default/files/styles/lst_small/public/featured/2017-06/data_taveler_microduo_3c.png?itok=GWRuSo7f" width="256" height="96" alt="Kingston DataTraveler microDuo 3C"/></noscript></amp-img></span>
+</a>
+</div>
+<div class="node__header-wrapper">
+<h3 class="node__title">
+<a href="/review-kingston-datatraveler-microduo-3c" rel="bookmark"><span>Kingston DataTraveler microDuo 3C - Dual memory stick with USB Type C and USB 3.0 connectivity</span>
+</a>
+</h3>
+<span property="schema:name" content="Kingston DataTraveler microDuo 3C - Dual memory stick with USB Type C and USB 3.0 connectivity" class="hidden"></span>
+<span property="schema:interactionCount" content="UserComments:0" class="hidden"></span>
+<footer class="node__meta">
+<div class="submitted">
+<span class="field-article-type">Review</span> by <span><span property="schema:name">Ciprian Adrian Rusen</span></span>
+published on <span>06/07/2017</span>
+</div>
+</footer>
+</div>
+<div class="node__content">
+<div class="field body"><p>USB Type-C is getting a lot of traction, and it is used on many smartphones, tablets, and ultrabooks. Even gaming laptops now include a USB Type-C port. This new port is tiny, fast and it can also be used for charging your devices. However, it poses one challenge: you can’t use traditional USB flash drives on computers and devices that have USB Type-C. To respond to this challenge, Kingston has released its DataTraveler microDuo 3C family of flash drives which offer both USB Type-C and USB 3.0 connectivity, so that you can connect the same memory stick to all kinds of devices, including your smartphone. To see how well it works, read this review:</p>
+</div>
+</div>
+</article>
+</div>
+<div class="views__row">
+<article class="article--teaser-simple">
+<div class="field field-featured-image"> <a href="/find-lost-stolen-smartphone-android-device-manager" tabindex="-1"><span><amp-img src="/sites/default/files/styles/lst_small/public/featured/2017-05/locate_smartphone.png?itok=l-4qxzXn" width="256" height="96" alt="Find My Device" layout="responsive"><noscript><img src="/sites/default/files/styles/lst_small/public/featured/2017-05/locate_smartphone.png?itok=l-4qxzXn" width="256" height="96" alt="Find My Device"/></noscript></amp-img></span>
+</a>
+</div>
+<div class="node__header-wrapper">
+<h3 class="node__title">
+<a href="/find-lost-stolen-smartphone-android-device-manager" rel="bookmark"><span>How to find your lost or stolen Android smartphone with Find My Device</span>
+</a>
+</h3>
+<span property="schema:name" content="How to find your lost or stolen Android smartphone with Find My Device" class="hidden"></span>
+<span property="schema:interactionCount" content="UserComments:0" class="hidden"></span>
+<footer class="node__meta">
+<div class="submitted">
+<span class="field-article-type">Tutorial</span> by <span><span property="schema:name">Codrut Neagu</span></span>
+published on <span>06/06/2017</span>
+</div>
+</footer>
+</div>
+<div class="node__content">
+<div class="field body"><p>In 2013, Google launched the <i>Android Device Manager</i> service for Android smartphones and tablets. Recently, it was renamed to <i>Find My Device</i>. Even though this feature has received its fair share of attention in the tech press, most Android users have no idea what it is and whether it is on their smartphones. Luckily, everyone with a modern Android smartphone has it built-in, and people can use it to find their lost or stolen Android devices, straight from their Google accounts. Here’s how:</p>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside id="block-amp-ad-right" class="block-amp-ad-right block block--amp-ad"><div class="block__slots"> <amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="6917585663" layout="fixed" height="600" width="300" media="(min-width: 880px)"></amp-ad> <amp-ad type="adsense" data-ad-client="ca-pub-4636325249148529" data-ad-slot="6917585663" layout="fixed" height="250" width="300" media="(max-width: 879px)"></amp-ad></div></aside>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<footer class="site-footer">
+<div class="layout-footer layout-container">
+<div class="region-footer-first">
+<nav aria-labelledby="block-next-footer-categories-menu" id="block-next-footer-categories" class="block-next-footer-categories block">
+<h2 id="block-next-footer-categories-menu">Categories</h2>
+<ul class="list-items">
+<li class="list-item">
+<a href="/productivity" data-drupal-link-system-path="taxonomy/term/85">Productivity</a>
+</li>
+<li class="list-item">
+<a href="/entertainment" data-drupal-link-system-path="taxonomy/term/87">Entertainment</a>
+</li>
+<li class="list-item">
+<a href="/security" data-drupal-link-system-path="taxonomy/term/86">Security</a>
+</li>
+<li class="list-item">
+<a href="/smartphone" data-drupal-link-system-path="taxonomy/term/89">Smartphone</a>
+</li>
+<li class="list-item">
+<a href="/smarthome" data-drupal-link-system-path="taxonomy/term/90">Smarthome</a>
+</li>
+<li class="list-item">
+<a href="/health" data-drupal-link-system-path="taxonomy/term/88">Health</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="region-footer-second">
+<nav aria-labelledby="block-next-footer-other-links-menu" id="block-next-footer-other-links" class="block-next-footer-other-links block">
+<h2 id="block-next-footer-other-links-menu">Other Links</h2>
+<ul class="list-items">
+<li class="list-item">
+<a href="/search" rel="nofollow">Search</a>
+</li>
+<li class="list-item">
+<a href="/subscription-options">Subscription options</a>
+</li>
+<li class="list-item">
+<a href="/about-us">About us</a>
+</li>
+<li class="list-item">
+<a href="/contact/website">Contact</a>
+</li>
+<li class="list-item">
+<a href="/terms-and-conditions">Terms and conditions</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="region-footer-third">
+<div class="views-element-container block-next-footer-our-books block" id="block-next-footer-our-books">
+<h2 class="block__title">Our Books</h2>
+<div><div class="layoutOurBooksColumns view view--books js-view-dom-id-5e9ee63879d8ff784667e3c0e4c565401a24b2b5fdabd7aa5af22c8b9e553f19">
+<div class="view__content">
+<div class="views__rows">
+<div class="views__row">
+<div class="field-content"> <a href="/windows-10-work-dummies-why-you-should-read-it"><span><amp-img src="/sites/default/files/styles/book_cover/public/featured/2015-10/win10_work_dummies.png?itok=OW0nySJi" width="128" height="160" alt="Windows 10 At Work For Dummies" title="Windows 10 At Work For Dummies" layout="responsive"><noscript><img src="/sites/default/files/styles/book_cover/public/featured/2015-10/win10_work_dummies.png?itok=OW0nySJi" width="128" height="160" alt="Windows 10 At Work For Dummies" title="Windows 10 At Work For Dummies"/></noscript></amp-img></span>
+</a>
+</div>
+</div>
+<div class="views__row">
+<div class="field-content"> <a href="/ic3-internet-and-computing-core-certification-global-standard-4-study-guide"><span><amp-img src="/sites/default/files/styles/book_cover/public/featured/2015-10/ic3_gs4.png?itok=4PmEVysj" width="128" height="160" alt="IC3 Global Standard 4" title="IC3 Global Standard 4" layout="responsive"><noscript><img src="/sites/default/files/styles/book_cover/public/featured/2015-10/ic3_gs4.png?itok=4PmEVysj" width="128" height="160" alt="IC3 Global Standard 4" title="IC3 Global Standard 4"/></noscript></amp-img></span>
+</a>
+</div>
+</div>
+<div class="views__row">
+<div class="field-content"> <a href="/windows-81-step-step-best-windows-81-book"><span><amp-img src="/sites/default/files/styles/book_cover/public/featured/2015-10/win81sbs.jpg?itok=6KZdslFV" width="128" height="160" alt="Windows 8.1 Step by Step" title="Windows 8.1 Step by Step" layout="responsive"><noscript><img src="/sites/default/files/styles/book_cover/public/featured/2015-10/win81sbs.jpg?itok=6KZdslFV" width="128" height="160" alt="Windows 8.1 Step by Step" title="Windows 8.1 Step by Step"/></noscript></amp-img></span>
+</a>
+</div>
+</div>
+<div class="views__row">
+<div class="field-content"> <a href="/dream-it-do-it-live-it-ciprians-first-personal-development-book"><span><amp-img src="/sites/default/files/styles/book_cover/public/featured/2015-10/dreamit.jpg?itok=vyUgtnZx" width="128" height="160" alt="Dream It, Do It, Live It" title="Dream It, Do It, Live It" layout="responsive"><noscript><img src="/sites/default/files/styles/book_cover/public/featured/2015-10/dreamit.jpg?itok=vyUgtnZx" width="128" height="160" alt="Dream It, Do It, Live It" title="Dream It, Do It, Live It"/></noscript></amp-img></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="region-footer-fourth">
+<div class="subscription-options block-next-footer-subscription-options-block block" typeof="schema:Organization" about="#Digital-Citizen" id="block-next-footer-subscription-options-block">
+<h2 class="block__title">Subscription options</h2>
+<span property="schema:name" content="Digital Citizen" class="hidden"></span>
+<span property="schema:url" content="http://www.digitalcitizen.life/" class="hidden"></span>
+<div class="hidden" property="schema:logo" typeof="schema:ImageObject"> <span property="schema:url" content="http://www.digitalcitizen.life/themes/next/logo-square.png" class="hidden"></span>
+</div>
+<p class="description">Provide an email address in order to subscribe to our newsletter. The email address is not made public.</p>
+<form class="subscription-options__form simple-form-box" target="_top" action="/newsletter/signup" method="post" accept-charset="UTF-8">
+<div class="js-form-item form-item js-form-type-email form-item-email js-form-item-email form-no-label">
+<label class="visually-hidden js-form-required form-required">Email address</label>
+<input placeholder="email address" class="subscription-options__form__email form-email required" type="email" name="email" size="14" maxlength="254" required="required" aria-required="true"/>
+</div>
+<div class="form-actions"><input title="Subscribe to our newsletter" class="subscription-options__form__submit button js-form-submit form-submit" type="submit" name="op" value="Subscribe"/>
+</div>
+</form>
+<p class="description">Other subscription options</p>
+<div class="subscription-options__social_buttons">
+<ul class="items"><li class="item"><a href="http://feeds.feedburner.com/digitalcitizen/xQbw" data-fontello-font="digital-citizen" data-fontello-glyph="rss" target="_blank" rel="nofollow noopener noreferrer schema:sameAs" title="Subscribe to our RSS Feed"><svg fill="currentColor" viewBox="0 0 1000 1000" height="1em" width="1em"><g transform="scale(1,-1) translate(0 -840)"><path d="M0-26q0 55 39 94t94 39 94-39 39-94q0-56-39-95t-94-38-94 39-39 94z m0 335l0 191q179 0 331-88t241-241 88-331l-192 0q0 194-137 331-138 138-331 138z m0 339l0 192q203 0 388-79t319-214 214-319 79-388l-192 0q0 164-64 314t-172 258-258 172-314 64z"/></g></svg><span class="title">RSS Feed</span></a></li><li class="item"><a href="https://www.facebook.com/DigitalCitizenLife" data-fontello-font="digital-citizen" data-fontello-glyph="facebook" target="_blank" rel="nofollow noopener noreferrer schema:sameAs" title="Like us on Facebook"><svg fill="currentColor" viewBox="0 0 538 1000" height="1em" width="1em"><g transform="scale(1,-1) translate(0 -840)"><path d="M0 303l0 191 154 0 0 96q0 104 68 177t163 73l153 0 0-191-153 0q-15 0-27-16t-12-41l0-98 192 0 0-191-192 0 0-463-192 0 0 463-154 0z"/></g></svg><span class="title">Facebook</span></a></li><li class="item"><a href="https://www.google.com/+7tutorials" data-fontello-font="digital-citizen" data-fontello-glyph="gplus" target="_blank" rel="nofollow noopener noreferrer schema:sameAs" title="Follow us on Google Plus"><svg fill="currentColor" viewBox="0 0 1184 1000" height="1em" width="1em"><g transform="scale(1,-1) translate(0 -840)"><path d="M0 22q0 87 89 155t215 68l54 0q-42 40-42 86 0 29 16 58-10-1-29-1-104 0-170 65t-66 160q0 91 82 159t187 68l310 0-69-50-98 0q47-18 74-68t26-111q0-93-88-162-37-29-48-46t-11-42q0-19 27-48t54-49q61-43 85-88t23-113q0-90-82-157t-222-66q-133 0-225 50t-92 132z m112 33q0-69 59-118t145-48q119 0 173 44t53 117q0 19-4 32-3 11-7 21t-12 19-14 16-19 16-21 15-25 18-26 17q-39 12-77 12-90 1-157-47t-68-114z m66 559q11-79 61-136t109-58q59-2 94 52t25 133-59 134-110 57-95-51-25-131z m555-24l0 50 200 0 0 200 50 0 0-200 201 0 0-50-201 0 0-201-50 0 0 201-200 0z"/></g></svg><span class="title">Google Plus</span></a></li><li class="item"><a href="https://twitter.com/DigitalCitizenL" data-fontello-font="digital-citizen" data-fontello-glyph="twitter" target="_blank" rel="nofollow noopener noreferrer schema:sameAs" title="Follow us on Twitter"><svg fill="currentColor" viewBox="0 0 1230 1000" height="1em" width="1em"><g transform="scale(1,-1) translate(0 -840)"><path d="M0-47q30-3 60-3 176 0 314 108-82 1-147 50t-89 125q20-4 47-4 35 0 67 9-88 17-145 87t-58 160l0 3q53-30 115-31-52 34-82 90t-31 120q0 68 35 127 94-117 230-186t290-78q-7 33-7 58 0 104 74 178t179 74q109 0 184-80 87 18 160 62-28-91-110-140 73 9 144 40-48-75-125-131l0-33q0-101-29-202t-90-194-145-165-201-115-253-42q-209 0-387 113z"/></g></svg><span class="title">Twitter</span></a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<amp-sidebar class="region-primary-menu layoutSidebar" id="layoutSidebar" layout="nodisplay" side="left">
+<div class="header">
+<button on="tap:layoutSidebar.close" class="close-button">
+<svg height="1em" width="1em" fill="currentColor" viewBox="0 0 785.7 1000"><g transform="scale(1,-1) translate(0 -840)"><path d="M724 102q0-22-15-38l-76-76q-16-15-38-15t-38 15l-164 165-164-165q-16-15-38-15t-38 15l-76 76q-16 16-16 38t16 38l164 164-164 164q-16 16-16 38t16 38l76 76q16 16 38 16t38-16l164-164 164 164q16 16 38 16t38-16l76-76q15-15 15-38t-15-38l-164-164 164-164q15-15 15-38z"/></g></svg>
+<span>Close main navigation</span>
+</button>
+</div>
+<div id="block-next-menu-search-form" class="block-next-menu-search-form block">
+<form class="next-search-form simple-form-box" data-drupal-selector="next-search-form" property="schema:potentialAction" typeof="schema:SearchAction" action="/search" method="get" id="next-search-form" accept-charset="UTF-8">
+<div class="js-form-item form-item js-form-type-search form-item-terms js-form-item-terms form-no-label">
+<label for="edit-terms" class="visually-hidden js-form-required form-required">Search Terms</label>
+<input title="Enter the terms you wish to search for." placeholder="Enter search terms" data-drupal-selector="edit-terms" type="search" id="edit-terms" name="terms" value="" size="12" maxlength="128" class="form-search required" required="required" aria-required="true"/>
+</div>
+<span property="schema:query-input" content="required name=terms" class="hidden" data-drupal-selector="edit-schema-query-input"></span>
+<span property="schema:target" content="/search?terms={terms}" class="hidden" data-drupal-selector="edit-schema-target"></span>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><button class="form-clean-icon-button button js-form-submit" data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search"><svg fill="currentColor" viewBox="0 0 928.6 1000" height="1.5em" width="1.5em"><g transform="scale(1,-1) translate(0 -840)"><path d="M643 376q0 103-73 176t-177 74-177-74-73-176 73-177 177-73 177 73 73 177z m286-465q0-29-22-50t-50-21q-30 0-50 21l-191 191q-100-69-223-69-80 0-153 31t-125 84-84 125-31 153 31 152 84 126 125 84 153 31 153-31 125-84 84-126 31-152q0-123-69-223l191-191q21-21 21-51z"/></g></svg>
+</button></div>
+</form>
+</div>
+<nav aria-labelledby="block-next-menu-categories-menu" id="block-next-menu-categories" class="block-next-menu-categories block">
+<h2 id="block-next-menu-categories-menu">Categories</h2>
+<ul class="list-items">
+<li class="list-item">
+<a href="/productivity" data-drupal-link-system-path="taxonomy/term/85">Productivity</a>
+</li>
+<li class="list-item">
+<a href="/entertainment" data-drupal-link-system-path="taxonomy/term/87">Entertainment</a>
+</li>
+<li class="list-item">
+<a href="/security" data-drupal-link-system-path="taxonomy/term/86">Security</a>
+</li>
+<li class="list-item">
+<a href="/smartphone" data-drupal-link-system-path="taxonomy/term/89">Smartphone</a>
+</li>
+<li class="list-item">
+<a href="/smarthome" data-drupal-link-system-path="taxonomy/term/90">Smarthome</a>
+</li>
+<li class="list-item">
+<a href="/health" data-drupal-link-system-path="taxonomy/term/88">Health</a>
+</li>
+</ul>
+</nav>
+<nav aria-labelledby="block-next-menu-other-links-menu" id="block-next-menu-other-links" class="block-next-menu-other-links block">
+<h2 id="block-next-menu-other-links-menu">Other Links</h2>
+<ul class="list-items">
+<li class="list-item">
+<a href="/search" rel="nofollow">Search</a>
+</li>
+<li class="list-item">
+<a href="/subscription-options">Subscription options</a>
+</li>
+<li class="list-item">
+<a href="/about-us">About us</a>
+</li>
+<li class="list-item">
+<a href="/contact/website">Contact</a>
+</li>
+<li class="list-item">
+<a href="/terms-and-conditions">Terms and conditions</a>
+</li>
+</ul>
+</nav>
+<nav aria-labelledby="block-next-menu-subscription-menu" id="block-next-menu-subscription" class="block-next-menu-subscription subscription-options__social_buttons block">
+<h2 class="visually-hidden" id="block-next-menu-subscription-menu">Subscription</h2>
+<ul class="items"><li class="item"><a href="http://feeds.feedburner.com/digitalcitizen/xQbw" data-fontello-font="digital-citizen" data-fontello-glyph="rss" target="_blank" rel="nofollow noopener noreferrer schema:sameAs" title="Subscribe to our RSS Feed"><svg fill="currentColor" viewBox="0 0 1000 1000" height="1em" width="1em"><g transform="scale(1,-1) translate(0 -840)"><path d="M0-26q0 55 39 94t94 39 94-39 39-94q0-56-39-95t-94-38-94 39-39 94z m0 335l0 191q179 0 331-88t241-241 88-331l-192 0q0 194-137 331-138 138-331 138z m0 339l0 192q203 0 388-79t319-214 214-319 79-388l-192 0q0 164-64 314t-172 258-258 172-314 64z"/></g></svg><span class="title">RSS Feed</span></a></li><li class="item"><a href="https://www.facebook.com/DigitalCitizenLife" data-fontello-font="digital-citizen" data-fontello-glyph="facebook" target="_blank" rel="nofollow noopener noreferrer schema:sameAs" title="Like us on Facebook"><svg fill="currentColor" viewBox="0 0 538 1000" height="1em" width="1em"><g transform="scale(1,-1) translate(0 -840)"><path d="M0 303l0 191 154 0 0 96q0 104 68 177t163 73l153 0 0-191-153 0q-15 0-27-16t-12-41l0-98 192 0 0-191-192 0 0-463-192 0 0 463-154 0z"/></g></svg><span class="title">Facebook</span></a></li><li class="item"><a href="https://www.google.com/+7tutorials" data-fontello-font="digital-citizen" data-fontello-glyph="gplus" target="_blank" rel="nofollow noopener noreferrer schema:sameAs" title="Follow us on Google Plus"><svg fill="currentColor" viewBox="0 0 1184 1000" height="1em" width="1em"><g transform="scale(1,-1) translate(0 -840)"><path d="M0 22q0 87 89 155t215 68l54 0q-42 40-42 86 0 29 16 58-10-1-29-1-104 0-170 65t-66 160q0 91 82 159t187 68l310 0-69-50-98 0q47-18 74-68t26-111q0-93-88-162-37-29-48-46t-11-42q0-19 27-48t54-49q61-43 85-88t23-113q0-90-82-157t-222-66q-133 0-225 50t-92 132z m112 33q0-69 59-118t145-48q119 0 173 44t53 117q0 19-4 32-3 11-7 21t-12 19-14 16-19 16-21 15-25 18-26 17q-39 12-77 12-90 1-157-47t-68-114z m66 559q11-79 61-136t109-58q59-2 94 52t25 133-59 134-110 57-95-51-25-131z m555-24l0 50 200 0 0 200 50 0 0-200 201 0 0-50-201 0 0-201-50 0 0 201-200 0z"/></g></svg><span class="title">Google Plus</span></a></li><li class="item"><a href="https://twitter.com/DigitalCitizenL" data-fontello-font="digital-citizen" data-fontello-glyph="twitter" target="_blank" rel="nofollow noopener noreferrer schema:sameAs" title="Follow us on Twitter"><svg fill="currentColor" viewBox="0 0 1230 1000" height="1em" width="1em"><g transform="scale(1,-1) translate(0 -840)"><path d="M0-47q30-3 60-3 176 0 314 108-82 1-147 50t-89 125q20-4 47-4 35 0 67 9-88 17-145 87t-58 160l0 3q53-30 115-31-52 34-82 90t-31 120q0 68 35 127 94-117 230-186t290-78q-7 33-7 58 0 104 74 178t179 74q109 0 184-80 87 18 160 62-28-91-110-140 73 9 144 40-48-75-125-131l0-33q0-101-29-202t-90-194-145-165-201-115-253-42q-209 0-387 113z"/></g></svg><span class="title">Twitter</span></a></li></ul>
+</nav>
+</amp-sidebar>
+<div id="block-amp-analytics" class="block-amp-analytics">
+<amp-analytics type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-866532-4","dataSource":"WEB"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"},"trackClickOnHeaderLogo":{"on":"click","selector":"#block-next-branding a.site-logo--link","request":"event","vars":{"eventCategory":"Homepage [header]","eventAction":"InboundClick"}},"trackClickOnMenuCategories":{"on":"click","selector":"#block-next-menu-categories a","request":"event","vars":{"eventCategory":"Categories [menu]","eventAction":"InboundClick"}},"trackClickOnMenuOtherLinks":{"on":"click","selector":"#block-next-menu-other-links a","request":"event","vars":{"eventCategory":"Other links [menu]","eventAction":"InboundClick"}},"trackClickOnMenuSubscription":{"on":"click","selector":"#block-next-menu-subscription a","request":"event","vars":{"eventCategory":"Subscription [menu]","eventAction":"InboundClick"}},"trackClickOnArticleAuthor":{"on":"click","selector":"#block-next-content .node__meta a.username","request":"event","vars":{"eventCategory":"View author [article]","eventAction":"InboundClick"}},"trackClickOnArticleProduct":{"on":"click","selector":"#block-next-content .field-product-link a","request":"event","vars":{"eventCategory":"Product link [article]","eventAction":"OutboundClick"}},"trackClickOnArticlePagination":{"on":"click","selector":"#block-next-content .node__content .pager a","request":"event","vars":{"eventCategory":"Pagination [article]","eventAction":"InboundClick"}},"trackClickOnArticleDiscoverMore":{"on":"click","selector":"#block-next-content .node__tags a","request":"event","vars":{"eventCategory":"Discover more [article]","eventAction":"InboundClick"}},"trackClickOnViewComments":{"on":"click","selector":"#block-next-content .comment-comments a","request":"event","vars":{"eventCategory":"View comments [article]","eventAction":"InboundClick"}},"trackClickOnAddComment":{"on":"click","selector":"#block-next-content .comment-add a","request":"event","vars":{"eventCategory":"Add comment [article]","eventAction":"InboundClick"}},"trackClickOnRelatedArticle":{"on":"click","selector":"#block-next-content-field-related-articles a","request":"event","vars":{"eventCategory":"Related articles [bottom]","eventAction":"InboundClick"}},"trackClickOnPopularArticle":{"on":"click","selector":"#block-next-popular-articles-block a","request":"event","vars":{"eventCategory":"Popular articles [sidebar]","eventAction":"InboundClick"}},"trackClickOnCategoryPagination":{"on":"click","selector":"#block-next-content .view--taxonomy-term .pager a","request":"event","vars":{"eventCategory":"Pagination [category]","eventAction":"InboundClick"}},"trackClickOnFooterCategories":{"on":"click","selector":"#block-next-footer-categories a","request":"event","vars":{"eventCategory":"Categories [footer]","eventAction":"InboundClick"}},"trackClickOnFooterOtherLinks":{"on":"click","selector":"#block-next-footer-other-links a","request":"event","vars":{"eventCategory":"Other links [footer]","eventAction":"InboundClick"}},"trackClickOnFooterOurBooks":{"on":"click","selector":"#block-next-footer-our-books a","request":"event","vars":{"eventCategory":"Our books [footer]","eventAction":"InboundClick"}},"trackClickOnFooterSubscription":{"on":"click","selector":"#block-next-footer-subscription-options-block a","request":"event","vars":{"eventCategory":"Subscription [footer]","eventAction":"InboundClick"}},"trackPageScroll":{"on":"scroll","scrollSpec":{"verticalBoundaries":[10,25,50,75]},"request":"event","vars":{"eventCategory":"Page Scroll","eventAction":"Scroll","eventLabel":"Scrolled to ${verticalScrollBoundary}%"}}}}</script>
+</amp-analytics>
+</div>
+<div id="block-next-amp-user-notification-eu-cookies-consent" class="block-next-amp-user-notification-eu-cookies-consent">
+<amp-user-notification id="eu-cookies-consent" layout="nodisplay"><div class="message">For optimal navigation, this site uses cookies. By continuing your browsing you agree with our use of cookies.</div>
+<div class="actions"><a href="/cookies-digital-citizen" class="button-element info-button">More info</a>
+<button on="tap:eu-cookies-consent.dismiss" class="button-element dismiss-button">I agree</button>
+</div>
+</amp-user-notification>
+</div>
+</body>
+</html>
